@@ -1,3 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  font-family: "Rubik", sans-serif;
+}
+:root {
+  background: #0c0c0c;
+}
+
+@media (max-width: 786px) {
+  .nav {
+    display: none;
+  }
+  .text {
+    font-size: 36px;
+    width: 190%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .text-width {
+    margin-left: 118px;
+  }
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  /* right: 0; */
+  bottom: 0;
+  background-position: 650px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  justify-content: flex-end;
+  background-image: url(./Image/backgroudImage.svg);
+}
+
+.barder-radius {
+  border-radius: 29.1171px 29.1171px 0px 0px;
+}
+
+.backgroud {
+  background: linear-gradient(
+    137.43deg,
+    rgba(255, 255, 255, 0.5) 3.89%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  border: 1.16468px solid #ffffff;
+  backdrop-filter: blur(11.6468px);
+}
